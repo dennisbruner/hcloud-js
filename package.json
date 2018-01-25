@@ -1,0 +1,35 @@
+{
+  "name": "hcloud-js",
+  "version": "1.0.0",
+  "description": "A Node.js module for the Hetzner Cloud API",
+  "homepage": "https://github.com/dennisbruner/hcloud-js",
+  "keywords": [
+    "hetzner",
+    "cloud",
+    "api"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "Dennis Bruner",
+    "email": "kontakt@dennisbruner.de",
+    "url": "https://dennisbruner.de"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dennisbruner/hcloud-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dennisbruner/hcloud-js/issues",
+    "email": "kontakt@dennisbruner.de"
+  },
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "standard"
+  },
+  "dependencies": {
+    "axios": "^0.17.1"
+  },
+  "devDependencies": {
+    "standard": "^10.0.3"
+  }
+}
