@@ -23,12 +23,25 @@ What currently works:
 
 ```javascript
 const HetznerCloud = require('hcloud-js')
-
 let client = new HetznerCloud.Client('API_TOKEN')
 
-// Get a list of actions
-client.actions.list()
-  .then(console.log)
+// Build server
+// You can also pass class instances instead of names and ids
+client.servers.build('my-debian-server')
+  .type('cx11')      // 1 Core, 2 GB Memory, 20 GB Disk space
+  .location('nbg1')  // Nuermberg
+  .image('debian-9') // Debian 9
+  .sshKey(1234)      // Your ssh key id
+  .create()          // Finish and create
+  .then(response => {
+    // Log server object
+    console.log(response.server)
+
+    // Log action object
+    console.log(response.action)
+  }).catch(error => {
+    // ...
+  })
 ```
 
 ## camelCase & snake_case
