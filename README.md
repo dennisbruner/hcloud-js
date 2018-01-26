@@ -13,6 +13,7 @@ What currently works:
 
  - Actions - `/actions`
  - SSH Keys - `/ssh_keys`
+ - Server Types - `/server_types`
  - Locations - `/locations`
  - Datacenters - `/datacenters`
  - ISOs - `/isos`
