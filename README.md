@@ -16,6 +16,7 @@ What currently works:
  - Server Types - `/server_types`
  - Locations - `/locations`
  - Datacenters - `/datacenters`
+ - Images - `/images`
  - ISOs - `/isos`
 
 ## Example
