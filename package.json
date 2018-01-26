@@ -27,7 +27,9 @@
     "test": "standard"
   },
   "dependencies": {
-    "axios": "^0.17.1"
+    "axios": "^0.17.1",
+    "camelcase": "^4.1.0",
+    "snake-case": "^2.1.0"
   },
   "devDependencies": {
     "standard": "^10.0.3"
