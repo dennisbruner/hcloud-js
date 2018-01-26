@@ -7,6 +7,16 @@ A Node.js module for the Hetzner Cloud API
 
 **This module is in active development! Don't expect anything to work yet!**
 
+## Progress
+
+What currently works:
+
+ - Actions - `/actions`
+ - SSH Keys - `/ssh_keys`
+ - Locations - `/locations`
+ - Datacenters - `/datacenters`
+ - ISOs - `/isos`
+
 ## Example
 
 ```javascript
