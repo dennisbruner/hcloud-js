@@ -2,6 +2,7 @@
 
 ![](https://img.shields.io/badge/code--style-standard-yellowgreen.svg?style=flat-square)
 ![](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)
+[![Travis](https://img.shields.io/travis/dennisbruner/hcloud-js.svg?style=flat-square)](https://travis-ci.org/dennisbruner/hcloud-js)
 
 A Node.js module for the Hetzner Cloud API
 
