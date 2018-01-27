@@ -11,36 +11,51 @@ A Node.js module for the Hetzner Cloud API
 
 What currently works:
 
- - Actions - `/actions`
- - SSH Keys - `/ssh_keys`
- - Server Types - `/server_types`
- - Locations - `/locations`
- - Datacenters - `/datacenters`
- - Images - `/images`
- - ISOs - `/isos`
+ - [Actions](https://docs.hetzner.cloud/#resources-actions)
+ - [SSH Keys](https://docs.hetzner.cloud/#resources-ssh-keys)
+ - [Server Types](https://docs.hetzner.cloud/#resources-server-types)
+ - [Locations](https://docs.hetzner.cloud/#resources-locations)
+ - [Datacenters](https://docs.hetzner.cloud/#resources-datacenters)
+ - [Images](https://docs.hetzner.cloud/#resources-images)
+ - [ISOs](https://docs.hetzner.cloud/#resources-isos)
+
+What is beeing worked on (and somewhat works):
+
+ - [Servers](https://docs.hetzner.cloud/#resources-servers)
+ - [Server Actions](https://docs.hetzner.cloud/#resources-server-actions)
+ - [Floating IPs](https://docs.hetzner.cloud/#resources-floating-ips)
+ - [Floating IP Actions](https://docs.hetzner.cloud/#resources-floating-ip-actions)
+
+What does not work yet:
+
+ - [Getting price information](https://docs.hetzner.cloud/#resources-pricing-get)
+ - [Getting metrics for a server](https://docs.hetzner.cloud/#resources-servers-get-2)
 
 ## Example
+
+### Create a client instance
 
 ```javascript
 const HetznerCloud = require('hcloud-js')
 let client = new HetznerCloud.Client('API_TOKEN')
+```
 
-// Build server
-// You can also pass class instances instead of names and ids
-client.servers.build('my-debian-server')
-  .serverType('cx11')      // 1 Core, 2 GB Memory, 20 GB Disk space
-  .location('nbg1')  // Nuermberg
-  .image('debian-9') // Debian 9
-  .sshKey(1234)      // Your ssh key id
-  .create()          // Finish and create
-  .then(response => {
-    // Log server object
-    console.log(response.server)
+### Build and create a server
 
-    // Log action object
-    console.log(response.action)
-  }).catch(error => {
-    // ...
+```javascript
+client.servers.build('my-awesome-server')
+  .serverType('cx11')
+  .location('nbg1')
+  .image('debian-9')
+  .sshKey(1234)
+  .create()
+  .then(function (response) {
+    // The response object contains:
+    // response.server - The server class instance
+    // response.action - The action for creating this server
+  })
+  .catch(function (error) {
+    // Handle error...
   })
 ```
 
