@@ -3,7 +3,7 @@
 Type: `class`<br>
 Extends: [`Pagination`](pagination.md)
 
-A list containing [Location](location.md).
+A list containing [Locations](location.md).
 
 ## Members
 
@@ -11,4 +11,4 @@ A list containing [Location](location.md).
 
 Type: `Array`
 
-An array containing [Location](location.md)
+An array containing [Locations](location.md)
