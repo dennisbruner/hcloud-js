@@ -56,8 +56,8 @@ Classes that will directly be returned by endpoints.
  - [LocationList](api/location-list.md)
  - [Datacenter](api/datacenter.md)
  - [DatacenterList](api/datacenter-list.md)
- - Image
- - ImageList
+ - [Image](api/image.md)
+ - [ImageList](api/image-list.md)
  - [ISO](api/iso.md)
  - [ISOList](api/iso-list.md)
 
