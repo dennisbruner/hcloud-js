@@ -44,8 +44,8 @@ Endpoints that can be used to call the Hetzner Cloud API.
 
 Classes that will directly be returned by endpoints.
 
- - Action
- - ActionList
+ - [Action](api/action.md)
+ - [ActionList](api/action-list.md)
  - Server
  - ServerList
  - FloatingIP
@@ -66,6 +66,7 @@ Classes that will directly be returned by endpoints.
 
 ### Misc
 
+ - [Pagination](api/pagination.md)
  - PublicNetwork
  - Address
  - AddressBlock

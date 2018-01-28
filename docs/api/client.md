@@ -1,15 +1,19 @@
-# Client - `class`
+# Client
+
+Type: `class`
 
 The Client class is the main class for this module and exposes different
 endpoint classes to communicate with the Hetzner Cloud API.
 
-## \#constructor(opts: string|Object)
+## Functions
+
+### \#constructor(opts: string|Object)
 
 | Parameter | Type                 | Description                                |
 | --------- | -------------------- | ------------------------------------------ |
-| opts      | `string` or `Object` | An API-Token or an Object (see below) |
+| opts      | `string` or `Object` | An API-Token or an Object (see below)      |
 
-### Passing an object
+#### Passing an object
 
 ```javascript
 // These are the default values. Replace them with yours!
@@ -28,38 +32,40 @@ const client = new HetznerCloud.Client({
 })
 ```
 
-## .actions
+## Members
+
+### .actions
 
 An instance of ActionsEndpoint
 
-## .servers
+### .servers
 
 An instance of ServerssEndpoint
 
-## .floatingIPs
+### .floatingIPs
 
 An instance of FloatingIPsEndpoint
 
-## .sshKeys
+### .sshKeys
 
 An instance of SSHKeysEndpoint
 
-## .serverTypes
+### .serverTypes
 
 An instance of ServerTypesEndpoint
 
-## .locations
+### .locations
 
 An instance of LocationsEndpoint
 
-## .datacenters
+### .datacenters
 
 An instance of DatacentersEndpoint
 
-## .images
+### .images
 
 An instance of ImagesEndpoint
 
-## .isos
+### .isos
 
 An instance of ISOsEndpoint
