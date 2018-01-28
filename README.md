@@ -57,23 +57,6 @@ client.servers.build('my-awesome-server')
   })
 ```
 
-### Enable backups for the created server
-
-```javascript
-  // ...
-  .then(function (response) {
-    // We want our backups to be made between 2 a.m. - 6 a.m.
-    return response.server.enableBackup('02-06')
-  })
-  .then(function (action) {
-    // action - This is the Action class instance returned by enableBackup
-    console.log(action)
-  })
-  .catch(function (error) {
-    // Handle error...
-  })
-```
-
 ## Official documentation
 
 Official documentation for the Hetzner Cloud API can be found here:
