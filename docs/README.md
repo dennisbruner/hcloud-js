@@ -52,8 +52,8 @@ Classes that will directly be returned by endpoints.
  - FloatingIPList
  - SSHKey
  - SSHKeyList
- - Location
- - LocationList
+ - [Location](api/location.md)
+ - [LocationList](api/location-list.md)
  - Image
  - ImageList
  - ISO
