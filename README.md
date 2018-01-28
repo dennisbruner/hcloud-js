@@ -10,22 +10,19 @@ A Node.js module for the Hetzner Cloud API
 
 ## Progress
 
-What currently works:
+What works:
 
  - [Actions](https://docs.hetzner.cloud/#resources-actions)
+ - [Servers](https://docs.hetzner.cloud/#resources-servers)
+ - [Server Actions](https://docs.hetzner.cloud/#resources-server-actions)
+ - [Floating IPs](https://docs.hetzner.cloud/#resources-floating-ips)
+ - [Floating IP Actions](https://docs.hetzner.cloud/#resources-floating-ip-actions)
  - [SSH Keys](https://docs.hetzner.cloud/#resources-ssh-keys)
  - [Server Types](https://docs.hetzner.cloud/#resources-server-types)
  - [Locations](https://docs.hetzner.cloud/#resources-locations)
  - [Datacenters](https://docs.hetzner.cloud/#resources-datacenters)
  - [Images](https://docs.hetzner.cloud/#resources-images)
  - [ISOs](https://docs.hetzner.cloud/#resources-isos)
-
-What is beeing worked on (and somewhat works):
-
- - [Servers](https://docs.hetzner.cloud/#resources-servers)
- - [Server Actions](https://docs.hetzner.cloud/#resources-server-actions)
- - [Floating IPs](https://docs.hetzner.cloud/#resources-floating-ips)
- - [Floating IP Actions](https://docs.hetzner.cloud/#resources-floating-ip-actions)
 
 What does not work yet:
 
@@ -60,35 +57,28 @@ client.servers.build('my-awesome-server')
   })
 ```
 
-## camelCase & snake_case
-
-Since [StandardJS](https://standardjs.com/rules.html) requires camelCase variables but Hetzner's API returns snake_case variables,
-the library will automatically convert snake_case to camelCase and vice versa. For example:
-
-Hetzner's API returns the following snake_case variables for pagination:
+### Enable backups for the created server
 
 ```javascript
-"page": 2,
-"per_page": 25,
-"previous_page": 1,
-"next_page": 3,
-"last_page": 4,
-"total_entries": 100
+  // ...
+  .then(function (response) {
+    // We want our backups to be made between 2 a.m. - 6 a.m.
+    return response.server.enableBackup('02-06')
+  })
+  .then(function (action) {
+    // action - This is the Action class instance returned by enableBackup
+    console.log(action)
+  })
+  .catch(function (error) {
+    // Handle error...
+  })
 ```
 
-These will be converted to:
+## Official documentation
 
-```javascript
-"page": 2,
-"perPage": 25,
-"previousPage": 1,
-"nextPage": 3,
-"lastPage": 4,
-"totalEntries": 100
-```
+Official documentation for the Hetzner Cloud API can be found here:
 
-This may of course change in the future.
-Any feedback on this topic is welcome!
+https://docs.hetzner.cloud/
 
 ## License
 
