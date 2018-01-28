@@ -8,19 +8,19 @@ A class extended by lists to get the next/previous page from the API.
 
 ### \#next()
 
-Returns: `Class<?> extends Pagination`
+Returns: `Promise<Class<?> extends Pagination>`
 
 Fetches the next page and returns a new list of the same type.
 
 ### \#previous()
 
-Returns: `Class<?> extends Pagination`
+Returns: `Promise<Class<?> extends Pagination>`
 
 Fetches the previous page and returns a new list of the same type.
 
 ### \#last()
 
-Returns: `Class<?> extends Pagination`
+Returns: `Promise<Class<?> extends Pagination>`
 
 Fetches the last page and returns a new list of the same type.
 
