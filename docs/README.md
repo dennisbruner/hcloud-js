@@ -54,6 +54,8 @@ Classes that will directly be returned by endpoints.
  - SSHKeyList
  - [Location](api/location.md)
  - [LocationList](api/location-list.md)
+ - [Datacenter](api/datacenter.md)
+ - [DatacenterList](api/datacenter-list.md)
  - Image
  - ImageList
  - ISO
