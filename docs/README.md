@@ -58,8 +58,8 @@ Classes that will directly be returned by endpoints.
  - [DatacenterList](api/datacenter-list.md)
  - Image
  - ImageList
- - ISO
- - ISOList
+ - [ISO](api/iso.md)
+ - [ISOList](api/iso-list.md)
 
 ### Builders
 
