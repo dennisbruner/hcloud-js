@@ -50,8 +50,8 @@ Classes that will directly be returned by endpoints.
  - ServerList
  - FloatingIP
  - FloatingIPList
- - SSHKey
- - SSHKeyList
+ - [SSHKey](api/sshkey.md)
+ - [SSHKeyList](api/sshkey-list.md)
  - [Location](api/location.md)
  - [LocationList](api/location-list.md)
  - [Datacenter](api/datacenter.md)
