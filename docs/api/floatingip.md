@@ -79,14 +79,34 @@ Returns an [Action](action.md) for setting the pointer.
 
 Type: `number`
 
-### .name
+### .description
 
 Type: `string`
 
-### .fingerprint
+### .ip
 
 Type: `string`
 
-### .publicKey
+### .type
 
 Type: `string`
+
+Will be either `ipv4` or `ipv6`.
+
+### .server
+
+Type: `number` or `null`
+
+### .location
+
+Type: [`Location`](location.md)
+
+### .blocked
+
+Type: `boolean`
+
+### .addresses
+
+Type: `Array`
+
+An array of [`Addresses`](address.md).
