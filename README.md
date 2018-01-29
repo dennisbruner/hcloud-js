@@ -57,11 +57,19 @@ client.servers.build('my-awesome-server')
   })
 ```
 
-## Official documentation
+## Documentation
 
-Official documentation for the Hetzner Cloud API can be found here:
+[Go to the documentation page for this module](docs/README.md)
 
-https://docs.hetzner.cloud/
+or
+
+[Visit the official Hetzner Cloud API documentation.](https://docs.hetzner.cloud/)
+
+## Contributing
+
+Feel free to open issues on GitHub or fork the repository.
+
+Any feedback is welcome!
 
 ## License
 
