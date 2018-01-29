@@ -10,10 +10,10 @@ Images can be used to rebuild your server. The can be System Images, Snapshot Im
 
 ### \#update([description: string[, type: string]])
 
-| Parameter   | Type   | Description                                               |
-| ----------- | ------ | --------------------------------------------------------- |
-| description | string | New description of the Image                              |
-| type        | string | Destination image type to convert to. Choices: `snapshot` |
+| Parameter   | Type     | Description                                               |
+| ----------- | -------- | --------------------------------------------------------- |
+| description | `string` | New description of the Image                              |
+| type        | `string` | Destination image type to convert to. Choices: `snapshot` |
 
 Returns: `Promise<Image>`
 

@@ -8,9 +8,9 @@ SSH keys are public keys you provide to the cloud system. They can be injected i
 
 ### \#changeName([name: string])
 
-| Parameter | Type   | Description              |
-| --------- | ------ | ------------------------ |
-| name      | string | New name for the SSH key |
+| Parameter | Type     | Description              |
+| --------- | -------- | ------------------------ |
+| name      | `string` | New name for the SSH key |
 
 Returns: `Promise<SSHKey>`
 

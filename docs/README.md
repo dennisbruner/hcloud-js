@@ -18,6 +18,10 @@
  - Assigning and unassigning
  - Setting or getting DNS pointers
 
+### Misc
+
+ - Sorting lists
+
 ## API
 
 ### Client
@@ -30,9 +34,9 @@ Endpoints that can be used to call the Hetzner Cloud API.
 
  - ActionsEndpoint
  - ServersEndpoint
-   - ServerActionsEndpoint
+   - ServerActionEndpoint
  - FloatingIPsEndpoint
-   - FloatingIPActionsEndpoint
+   - FloatingIPActionEndpoint
  - SSHKeysEndpoint
  - ServerTypesEndpoint
  - LocationsEndpoint
@@ -46,12 +50,16 @@ Classes that will directly be returned by endpoints.
 
  - [Action](api/action.md)
  - [ActionList](api/action-list.md)
- - Server
- - ServerList
- - FloatingIP
- - FloatingIPList
+ - [Server](api/server.md)
+ - [ServerList](api/server-list.md)
+ - ServerActionList
+ - [FloatingIP](api/floatingip.md)
+ - [FloatingIPList](api/floatingip-list.md)
+ - FloatingIPActionList
  - [SSHKey](api/sshkey.md)
  - [SSHKeyList](api/sshkey-list.md)
+ - [ServerType](api/servertype.md)
+ - [ServerTypeList](api/servertype-list.md)
  - [Location](api/location.md)
  - [LocationList](api/location-list.md)
  - [Datacenter](api/datacenter.md)
@@ -69,7 +77,7 @@ Classes that will directly be returned by endpoints.
 ### Misc
 
  - [Pagination](api/pagination.md)
- - PublicNetwork
- - Address
- - AddressBlock
- - Traffic
+ - [PublicNetwork](api/public-network.md)
+ - [Address](api/address.md)
+ - [AddressBlock](api/address-block.md)
+ - [Traffic](api/traffic.md)
