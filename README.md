@@ -1,8 +1,9 @@
 # hcloud-js
 
-![](https://img.shields.io/badge/code--style-standard-yellowgreen.svg?style=flat-square)
-![](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)
-[![Travis](https://img.shields.io/travis/dennisbruner/hcloud-js.svg?style=flat-square)](https://travis-ci.org/dennisbruner/hcloud-js)
+[![StandardJS](https://img.shields.io/badge/code--style-standard-yellowgreen.svg?style=flat)](https://standardjs.com)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE.md)
+[![Travis](https://img.shields.io/travis/dennisbruner/hcloud-js.svg?style=flat)](https://travis-ci.org/dennisbruner/hcloud-js)
+[![Known Vulnerabilities](https://snyk.io/test/github/dennisbruner/hcloud-js/badge.svg?targetFile=package.json)](https://snyk.io/test/github/dennisbruner/hcloud-js?targetFile=package.json)
 
 A Node.js module for the Hetzner Cloud API
 
