@@ -81,3 +81,7 @@ Classes that will directly be returned by endpoints.
  - [Address](api/address.md)
  - [AddressBlock](api/address-block.md)
  - [Traffic](api/traffic.md)
+
+### Errors
+
+ - [APIError](api/api-error.md)
