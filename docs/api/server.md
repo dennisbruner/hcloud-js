@@ -24,7 +24,13 @@ Deletes the server.
 
 ### \#getActions([params: Object])
 
-// TODO
+| Parameter | Type     | Description             |
+| --------- | -------- | ----------------------- |
+| params    | `Object` | Can be used for sorting |
+
+Returns: `Promise<ServerActionList>`
+
+Get an action list for this specific server.
 
 ### \#getAction(id: number)
 

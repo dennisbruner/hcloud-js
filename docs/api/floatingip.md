@@ -6,6 +6,26 @@ An IP address or block that can be assigned/unassigned to/from servers at runtim
 
 ## Functions
 
+### \#getActions([params: Object])
+
+| Parameter | Type     | Description             |
+| --------- | -------- | ----------------------- |
+| params    | `Object` | Can be used for sorting |
+
+Returns: `Promise<FloatingIPActionList>`
+
+Get an action list for this specific floating IP.
+
+### \#getAction(id: number)
+
+| Parameter | Type     | Description   |
+| --------- | -------- | ------------- |
+| id        | `number` | The action id |
+
+Returns: `Promise<Action>`
+
+Get a specific action for this floating IP.
+
 ### \#isV4()
 
 Returns: `boolean`
