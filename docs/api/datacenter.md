@@ -4,6 +4,24 @@ Type: `class`
 
 The Datacenter is where your servers are located at.
 
+## Functions
+
+### \#isSupported(serverType: number|[ServerType](serverType.md))
+
+| Parameter  | Type                                      | Description     |
+| ---------- | ----------------------------------------- | --------------- |
+| serverType | `number` or [`ServerType`](serverType.md) | The server type |
+
+Checks wether the server type is supported by this datacenter or not.
+
+### \#isAvailable(serverType: number|[ServerType](serverType.md))
+
+| Parameter  | Type                                      | Description     |
+| ---------- | ----------------------------------------- | --------------- |
+| serverType | `number` or [`ServerType`](serverType.md) | The server type |
+
+Checks wether the server type is available at this datacenter or not.
+
 ## Members
 
 ### .id
