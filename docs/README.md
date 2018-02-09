@@ -52,10 +52,10 @@ Classes that will directly be returned by endpoints.
  - [ActionList](api/action-list.md)
  - [Server](api/server.md)
  - [ServerList](api/server-list.md)
- - ServerActionList
+ - [ServerActionList](api/server-action-list.md)
  - [FloatingIP](api/floatingip.md)
  - [FloatingIPList](api/floatingip-list.md)
- - FloatingIPActionList
+ - [FloatingIPActionList](api/floatingip-action-list.md)
  - [SSHKey](api/sshkey.md)
  - [SSHKeyList](api/sshkey-list.md)
  - [ServerType](api/servertype.md)
