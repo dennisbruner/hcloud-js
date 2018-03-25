@@ -1,0 +1,49 @@
+site_name: hcloud-js
+copyright: MIT License
+docs_dir: docs
+theme: readthedocs
+repo_url: https://github.com/dennisbruner/hcloud-js
+repo_name: GitHub
+pages:
+  - Introduction: index.md
+  - Examples:
+    - Getting started: examples/getting-started.md
+    - Creating and deleting servers: examples/creating-and-deleting-servers.md
+    - Power on and off: examples/power-on-and-off.md
+    - Enabling and disabling backups: examples/enabling-and-disabling-backups.md
+    - Rebuilding from an image: examples/rebuilding-from-an-image.md
+    - Upgrading server type: examples/upgrading-server-type.md
+    - Rate limiting: examples/rate-limiting.md
+    - Handling errors: examples/handling-errors.md
+  - Client:
+    - Client: api/client/client.md
+  - Response classes:
+    - Action: api/actions/action.md
+    - ActionList: api/actions/action-list.md
+    - Server: api/servers/server.md
+    - ServerList: api/servers/server-list.md
+    - ServerActionList: api/servers/server-action-list.md
+    - FloatingIP: api/floatingips/floatingip.md
+    - FloatingIPList: api/floatingips/floatingip-list.md
+    - FloatingIPActionList: api/floatingips/floatingip-action-list.md
+    - SSHKey: api/sshkeys/sshkey.md
+    - SSHKeyList: api/sshkeys/sshkey-list.md
+    - ServerType: api/servertypes/servertype.md
+    - ServerTypeList: api/servertypes/servertype-list.md
+    - Datacenter: api/datacenters/datacenter.md
+    - DatacenterList: api/datacenters/datacenter-list.md
+    - Location: api/locations/location.md
+    - LocationList: api/locations/location-list.md
+    - Image: api/images/image.md
+    - ImageList: api/images/image-list.md
+    - ISO: api/isos/iso.md
+    - ISOList: api/isos/iso-list.md
+  - Builder:
+    - ServerBuilder: api/builder/server-builder.md
+    - FloatingIPBuilder: api/builder/floatingip-builder.md
+  - Misc:
+    - Pagination: api/misc/pagination.md
+    - PublicNetwork: api/misc/public-network.md
+    - Address: api/misc/address.md
+    - AddressBlock: api/misc/address-block.md
+    - Traffic: api/misc/traffic.md
