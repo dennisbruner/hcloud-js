@@ -68,4 +68,4 @@ An instance of ImagesEndpoint
 
 ### .isos
 
-An instance of ISOsEndpoint
+An instance of [ISOsEndpoint](../endpoints/isos-endpoint.md)
