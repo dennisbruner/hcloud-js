@@ -60,7 +60,7 @@ An instance of LocationsEndpoint
 
 ### .datacenters
 
-An instance of DatacentersEndpoint
+An instance of [DatacentersEndpoint](../endpoints/datacenters-endpoint.md)
 
 ### .images
 
