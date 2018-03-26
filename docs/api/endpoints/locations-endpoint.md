@@ -10,7 +10,7 @@
 
 Returns: `Promise<LocationList>`
 
-Returns a navigateable list of locations.
+Returns a navigatable list of locations.
 
 ### \#get(id)
 

@@ -10,7 +10,7 @@
 
 Returns: `Promise<DatacenterList>`
 
-Returns a navigateable list of datacenters.
+Returns a navigatable list of datacenters.
 
 ### \#get(id)
 

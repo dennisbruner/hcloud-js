@@ -8,9 +8,9 @@
 | --------- | -------- | ------------------------------------------------------------------------------------------------------- |
 | params    | `Object` | Additional uri parameters. See [official documentaion](https://docs.hetzner.cloud/#resources-isos-get). |
 
-Returns: `Promise<ISOsList>`
+Returns: `Promise<ISOList>`
 
-Returns a navigateable list of ISOs.
+Returns a navigatable list of ISOs.
 
 ### \#get(id)
 
@@ -18,6 +18,6 @@ Returns a navigateable list of ISOs.
 | --------- | -------- | ----------- |
 | id        | `number` | ISO id.     |
 
-Returns: `Promise<Action>`
+Returns: `Promise<ISO>`
 
 Returns a single [ISO](../isos/iso.md) class instance.
