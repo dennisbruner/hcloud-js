@@ -56,7 +56,7 @@ An instance of ServerTypesEndpoint
 
 ### .locations
 
-An instance of LocationsEndpoint
+An instance of [LocationsEndpoint](../endpoints/locations-endpoint.md)
 
 ### .datacenters
 
