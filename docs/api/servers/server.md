@@ -186,6 +186,22 @@ Returns: `Promise<Action>`
 
 Detach any attached ISO.
 
+### \#requestConsole()
+
+Returns: `Promise<Object>`
+
+Requests access to then console via VNC.
+
+#### Returned object
+
+```javascript
+{
+  wssUrl: "wss://...", // Secure websocket URL
+  password: "...", // VNC password
+  action: // An instance of Action
+}
+```
+
 ## Properties
 
 ### .id
