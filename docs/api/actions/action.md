@@ -4,7 +4,7 @@ Type: `class`
 
 Actions show the results and progress of asynchronous requests to the API.
 
-## Members
+## Properties
 
 ### .id
 

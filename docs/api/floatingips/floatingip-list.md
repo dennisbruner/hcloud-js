@@ -5,7 +5,7 @@ Extends: [`Pagination`](../misc/pagination.md)
 
 A list containing [FloatingIPs](floatingip.md).
 
-## Members
+## Properties
 
 ### .floatingIPs
 

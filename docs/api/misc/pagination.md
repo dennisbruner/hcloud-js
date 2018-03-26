@@ -24,7 +24,7 @@ Returns: `Promise<Class<?> extends Pagination>`
 
 Fetches the last page and returns a new list of the same type.
 
-## Members
+## Properties
 
 ### .page
 

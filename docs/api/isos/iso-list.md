@@ -5,7 +5,7 @@ Extends: [`Pagination`](../misc/pagination.md)
 
 A list containing [ISOs](iso.md).
 
-## Members
+## Properties
 
 ### .isos
 

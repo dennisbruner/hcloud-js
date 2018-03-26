@@ -5,7 +5,7 @@ Extends: [`Pagination`](../misc/pagination.md)
 
 A list containing [Images](image.md).
 
-## Members
+## Properties
 
 ### .images
 

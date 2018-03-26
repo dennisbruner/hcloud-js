@@ -18,7 +18,7 @@ Returns: `string`
 
 Returns: `Promise<Action>`
 
-## Members
+## Properties
 
 ### .ip
 

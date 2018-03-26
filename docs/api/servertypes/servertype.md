@@ -4,7 +4,7 @@ Type: `class`
 
 Server types define kinds of servers offered.
 
-## Members
+## Properties
 
 ### .id
 

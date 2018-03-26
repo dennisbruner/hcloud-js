@@ -10,7 +10,7 @@ Returns: `number`
 
 Calculates the traffic usage percentage.
 
-## Members
+## Properties
 
 ### .outgoing
 

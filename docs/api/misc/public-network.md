@@ -2,7 +2,7 @@
 
 Type: `class`
 
-## Members
+## Properties
 
 ### .ipv4
 
