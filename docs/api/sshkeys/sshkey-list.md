@@ -5,7 +5,7 @@ Extends: [`Pagination`](../misc/pagination.md)
 
 A list containing [SSHKeys](sshkey.md).
 
-## Members
+## Properties
 
 ### .sshKeys
 

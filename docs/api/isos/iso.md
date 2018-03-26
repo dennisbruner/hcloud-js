@@ -4,7 +4,7 @@ Type: `class`
 
 ISOs are Read-Only images of DVDs. These can be mount to your server at runtime.
 
-## Members
+## Properties
 
 ### .id
 

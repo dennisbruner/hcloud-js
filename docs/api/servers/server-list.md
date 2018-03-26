@@ -5,7 +5,7 @@ Extends: [`Pagination`](../misc/pagination.md)
 
 A list containing [Servers](server.md).
 
-## Members
+## Properties
 
 ### .servers
 

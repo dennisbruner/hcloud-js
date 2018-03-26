@@ -20,7 +20,7 @@ Returns: `Promise`
 
 Deletes the SSH key.
 
-## Members
+## Properties
 
 ### .id
 

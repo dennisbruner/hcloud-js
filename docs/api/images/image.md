@@ -23,7 +23,7 @@ Returns: `Promise`
 
 Deletes the image.
 
-## Members
+## Properties
 
 ### .id
 

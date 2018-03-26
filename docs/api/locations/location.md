@@ -4,7 +4,7 @@ Type: `class`
 
 Datacenters are organized by locations. Servers created by only specifying only the location will choose a random Datacenter in that location.
 
-## Members
+## Properties
 
 ### .id
 

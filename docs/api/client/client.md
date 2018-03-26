@@ -32,7 +32,7 @@ const client = new HetznerCloud.Client({
 })
 ```
 
-## Members
+## Properties
 
 ### .actions
 

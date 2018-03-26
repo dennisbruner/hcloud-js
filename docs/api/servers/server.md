@@ -180,7 +180,7 @@ Returns: `Promise<Action>`
 
 Detach any attached ISO.
 
-## Members
+## Properties
 
 ### .id
 

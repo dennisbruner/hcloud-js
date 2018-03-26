@@ -22,7 +22,7 @@ Checks wether the server type is supported by this datacenter or not.
 
 Checks wether the server type is available at this datacenter or not.
 
-## Members
+## Properties
 
 ### .id
 

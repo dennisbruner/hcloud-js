@@ -93,7 +93,7 @@ Returns: `Promise<Action>`
 
 Returns an [Action](../actions/action.md) for setting the pointer.
 
-## Members
+## Properties
 
 ### .id
 
