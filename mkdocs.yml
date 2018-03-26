@@ -17,6 +17,8 @@ pages:
     - Handling errors: examples/handling-errors.md
   - Client:
     - Client: api/client/client.md
+  - Endpoints:
+    - ActionsEndpoint: api/endpoints/actions-endpoint.md
   - Response classes:
     - Action: api/actions/action.md
     - ActionList: api/actions/action-list.md
