@@ -164,6 +164,12 @@ Returns: `Promise<Action>`
 
 Enables backups for this server.
 
+### \#disableBackup()
+
+Returns: `Promise<Action>`
+
+Disables backups for this server.
+
 ### \#attachISO(iso)
 
 | Parameter | Type                                  | Description                      |
