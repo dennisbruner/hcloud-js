@@ -2,6 +2,7 @@
 
 [![StandardJS](https://img.shields.io/badge/code--style-standard-yellowgreen.svg?style=flat)](https://standardjs.com)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE.md)
+[![Documentation Status](https://readthedocs.org/projects/hcloud-js/badge/?version=latest)](http://hcloud-js.readthedocs.io/en/latest/?badge=latest)
 [![Travis](https://img.shields.io/travis/dennisbruner/hcloud-js.svg?style=flat)](https://travis-ci.org/dennisbruner/hcloud-js)
 [![Known Vulnerabilities](https://snyk.io/test/github/dennisbruner/hcloud-js/badge.svg?targetFile=package.json)](https://snyk.io/test/github/dennisbruner/hcloud-js?targetFile=package.json)
 
