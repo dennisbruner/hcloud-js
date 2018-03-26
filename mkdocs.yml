@@ -19,6 +19,7 @@ pages:
     - Client: api/client/client.md
   - Endpoints:
     - ActionsEndpoint: api/endpoints/actions-endpoint.md
+    - LocationsEndpoint: api/endpoints/locations-endpoint.md
     - DatacentersEndpoint: api/endpoints/datacenters-endpoint.md
     - ISOsEndpoint: api/endpoints/isos-endpoint.md
   - Response classes:
