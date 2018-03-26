@@ -36,7 +36,7 @@ const client = new HetznerCloud.Client({
 
 ### .actions
 
-An instance of ActionsEndpoint
+An instance of [ActionsEndpoint](../endpoints/actions-endpoint.md)
 
 ### .servers
 
