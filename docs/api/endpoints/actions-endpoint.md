@@ -10,7 +10,7 @@
 
 Returns: `Promise<ActionList>`
 
-Returns a navigateable list of actions.
+Returns a navigatable list of actions.
 
 ### \#get(id)
 
