@@ -190,7 +190,7 @@ Detach any attached ISO.
 
 Returns: `Promise<Object>`
 
-Requests access to then console via VNC.
+Requests access to the console via VNC.
 
 #### Returned object
 
