@@ -23,6 +23,7 @@ client.servers.build('my-awesome-server')
   .serverType('cx11')
   .location('nbg1')
   .image('debian-9')
+  .sshKey('work')
   .create()
   .then(function (response) {
     // The response object contains:
