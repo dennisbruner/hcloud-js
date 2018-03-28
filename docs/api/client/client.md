@@ -52,7 +52,7 @@ An instance of SSHKeysEndpoint
 
 ### .serverTypes
 
-An instance of ServerTypesEndpoint
+An instance of [ServerTypesEndpoint](../endpoints/servertypes-endpoint.md)
 
 ### .locations
 
