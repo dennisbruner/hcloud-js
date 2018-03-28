@@ -48,7 +48,7 @@ An instance of FloatingIPsEndpoint
 
 ### .sshKeys
 
-An instance of SSHKeysEndpoint
+An instance of [SSHKeysEndpoint](../endpoints/sshkeys-endpoint.md)
 
 ### .serverTypes
 
