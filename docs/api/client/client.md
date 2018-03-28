@@ -64,7 +64,7 @@ An instance of [DatacentersEndpoint](../endpoints/datacenters-endpoint.md)
 
 ### .images
 
-An instance of ImagesEndpoint
+An instance of [ImagesEndpoint](../endpoint/images-endpoint.md)
 
 ### .isos
 
