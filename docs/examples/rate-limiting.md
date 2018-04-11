@@ -1,3 +1,0 @@
-# Rate limiting
-
-TODO
