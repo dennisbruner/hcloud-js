@@ -6,15 +6,6 @@ repo_url: https://github.com/dennisbruner/hcloud-js
 repo_name: GitHub
 pages:
   - Introduction: index.md
-  - Examples:
-    - Getting started: examples/getting-started.md
-    - Creating and deleting servers: examples/creating-and-deleting-servers.md
-    - Power on and off: examples/power-on-and-off.md
-    - Enabling and disabling backups: examples/enabling-and-disabling-backups.md
-    - Rebuilding from an image: examples/rebuilding-from-an-image.md
-    - Upgrading server type: examples/upgrading-server-type.md
-    - Rate limiting: examples/rate-limiting.md
-    - Handling errors: examples/handling-errors.md
   - Client:
     - Client: api/client/client.md
   - Endpoints:
