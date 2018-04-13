@@ -33,7 +33,7 @@ Returns a single [Action](../actions/action.md) class instance.
 
 Returns: `Promise<Action>`
 
-### \#unassign(id, serverID)
+### \#unassign(id)
 
 | Parameter | Type     | Description     |
 | --------- | -------- | --------------- |
