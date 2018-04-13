@@ -39,3 +39,9 @@ Returns: `Promise<Image>`
 | id        | `number` | Image id.   |
 
 Returns: `Promise`
+
+## Properties
+
+### .actions
+
+An instance of [ImageActionsEndpoint](image-actions-endpoint.md)
