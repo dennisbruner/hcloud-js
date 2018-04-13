@@ -10,6 +10,8 @@ pages:
     - Client: api/client/client.md
   - Endpoints:
     - ActionsEndpoint: api/endpoints/actions-endpoint.md
+    - FloatingIPsEndpoint: api/endpoints/floatingips-endpoint.md
+    - FloatingIPActionsEndpoint: api/endpoints/floatingip-actions-endpoint.md
     - SSHKeysEndpoint: api/endpoints/sshkeys-endpoint.md
     - ServerTypesEndpoint: api/endpoints/servertypes-endpoint.md
     - LocationsEndpoint: api/endpoints/locations-endpoint.md
