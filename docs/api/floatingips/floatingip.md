@@ -130,3 +130,9 @@ Type: `boolean`
 Type: `Array`
 
 An array of [`Addresses`](../misc/address.md).
+
+### .protection
+
+Type: `Object`
+
+Protection configuration for the floating IP.

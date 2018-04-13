@@ -86,3 +86,9 @@ Operating system version.
 Type: `boolean`
 
 Indicates that rapid deploy of the image is available.
+
+### .protection
+
+Type: `Object`
+
+Protection configuration for the image.

@@ -280,3 +280,9 @@ Type: [`Traffic`](../misc/traffic.md)
 Type: `string` or `null`
 
 This variable is only set when creating a server.
+
+### .protection
+
+Type: `Object`
+
+Protection configuration for the server.
