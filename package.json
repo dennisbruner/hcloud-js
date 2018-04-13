@@ -24,6 +24,7 @@
   },
   "main": "lib/index.js",
   "scripts": {
+    "lint": "standard --env mocha",
     "test": "standard --env mocha && mocha --timeout 5000"
   },
   "dependencies": {
