@@ -24,7 +24,7 @@
   },
   "main": "lib/index.js",
   "scripts": {
-    "test": "standard --env mocha && mocha"
+    "test": "standard --env mocha && mocha --timeout 5000"
   },
   "dependencies": {
     "axios": "^0.17.1",
