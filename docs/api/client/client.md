@@ -40,7 +40,7 @@ An instance of [ActionsEndpoint](../endpoints/actions-endpoint.md)
 
 ### .servers
 
-An instance of ServerssEndpoint
+An instance of [ServersEndpoint](../endpoints/servers-endpoint.md)
 
 ### .floatingIPs
 
