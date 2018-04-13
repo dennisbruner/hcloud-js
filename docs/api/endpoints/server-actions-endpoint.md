@@ -1,78 +1,84 @@
-# Server
-
-Type: `class`
-
-Servers are virtual machines that can be provisioned.
+# ServerActionsEndpoint
 
 ## Functions
 
-### \#changeName([name])
+### \#list(id, params)
 
-| Parameter | Type     | Description                 |
-| --------- | -------- | --------------------------- |
-| name      | `string` | The new name for the server |
-
-Returns: `Promise<Server>`
-
-Change the name of the server.
-
-### \#delete()
-
-Returns: `Promise<Action>`
-
-Deletes the server.
-
-### \#getActions([params])
-
-| Parameter | Type     | Description             |
-| --------- | -------- | ----------------------- |
-| params    | `Object` | Can be used for sorting |
+| Parameter | Type     | Description                                                                                                       |
+| --------- | -------- | ----------------------------------------------------------------------------------------------------------------- |
+| id        | `number` | Server id.                                                                                                        |
+| params    | `Object` | Additional uri parameters. See [official documentaion](https://docs.hetzner.cloud/#resources-server-actions-get). |
 
 Returns: `Promise<ServerActionList>`
 
-Get an action list for this specific server.
+Returns a navigatable list of actions for the server.
 
-### \#getAction(id)
+### \#get(id, serverID)
 
-| Parameter | Type     | Description   |
-| --------- | -------- | ------------- |
-| id        | `number` | The action id |
+| Parameter | Type     | Description |
+| --------- | -------- | ----------- |
+| id        | `number` | Server id.  |
+| serverID  | `number` | Action id.  |
 
 Returns: `Promise<Action>`
 
-Get a specific action for this server.
+Returns a single [Action](../actions/action.md) class instance.
 
-### \#powerOn()
+### \#powerOn(id)
+
+| Parameter | Type     | Description |
+| --------- | -------- | ----------- |
+| id        | `number` | Server id.  |
 
 Returns: `Promise<Action>`
 
 Power on a server.
 
-### \#powerOff()
+### \#powerOff(id)
+
+| Parameter | Type     | Description |
+| --------- | -------- | ----------- |
+| id        | `number` | Server id.  |
 
 Returns: `Promise<Action>`
 
 Cuts power to the server. You may loose data by doing this.
 
-### \#reboot()
+### \#reboot(id)
+
+| Parameter | Type     | Description |
+| --------- | -------- | ----------- |
+| id        | `number` | Server id.  |
 
 Returns: `Promise<Action>`
 
 Reboots a server gracefully by sending an ACPI request.
 
-### \#reset()
+### \#reset(id)
+
+| Parameter | Type     | Description |
+| --------- | -------- | ----------- |
+| id        | `number` | Server id.  |
 
 Returns: `Promise<Action>`
 
 Same as **#powerOff()** but starts the server after powering off.
 
-### \#shutdown()
+### \#shutdown(id)
+
+| Parameter | Type     | Description |
+| --------- | -------- | ----------- |
+| id        | `number` | Server id.  |
 
 Returns: `Promise<Action>`
 
 Shuts down a server gracefully by sending an ACPI shutdown request.
 
-### \#resetPassword()
+### \#resetPassword(id)
+
+| Parameter | Type     | Description |
+| --------- | -------- | ----------- |
+| id        | `number` | Server id.  |
 
 Returns: `Promise<Object>`
 
@@ -87,10 +93,11 @@ Tells the server to reset the root password.
 }
 ```
 
-### \#enableRescue([type[, sshKeys]])
+### \#enableRescue(id, [type[, sshKeys]])
 
 | Parameter | Type     | Description                                                           |
 | --------- | -------- | --------------------------------------------------------------------- |
+| id        | `number` | Server id.                                                            |
 | type      | `string` | Can be `linux64`, `linux32` or `freebsd64` (default: `linux64`)       |
 | sshKeys   | `Array`  | An array of `numbers`, `strings` or [`SSHKeys`](../sshkeys/sshkey.md) |
 
@@ -107,16 +114,22 @@ Enables rescue mode.
 }
 ```
 
-### \#disableRescue()
+### \#disableRescue(id)
+
+| Parameter | Type     | Description |
+| --------- | -------- | ----------- |
+| id        | `number` | Server id.  |
 
 Returns: `Promise<Action>`
 
 Disable rescue mode.
 
-### \#createImage([type[, description]])
+### \#createImage(id, [type[, description]])
+
 
 | Parameter   | Type     | Description                       |
 | ----------- | -------- | --------------------------------- |
+| id          | `number` | Server id.                        |
 | type        | `string` | Can be `snapshot` or `backup`     |
 | description | `string` | The description for the new image |
 
@@ -133,20 +146,22 @@ Creates a new image.
 }
 ```
 
-### \#rebuild(image)
+### \#rebuild(id, image)
 
 | Parameter | Type                                                | Description                               |
 | --------- | --------------------------------------------------- | ----------------------------------------- |
+| id        | `number`                                            | Server id.                                |
 | image     | `number`, `string` or [`Image`](../images/image.md) | The image the server will be rebuilt from |
 
 Returns: `Promise<Action>`
 
 Rebuild the server from an image.
 
-### \#changeType(type[, upgradeDisk])
+### \#changeType(id, type[, upgradeDisk])
 
 | Parameter   | Type                                                               | Description                                         |
 | ----------- | ------------------------------------------------------------------ | --------------------------------------------------- |
+| id          | `number`                                                           | Server id.                                          |
 | type        | `number`, `string` or [`ServerType`](../servertypes/servertype.md) | ID, name or ServerType the server should migrate to |
 | upgradeDisk | `boolean`                                                          | Does not upgrade the disk if false                  |
 
@@ -154,42 +169,53 @@ Returns: `Promise<Action>`
 
 Changes the server type.
 
-### \#enableBackup([backupWindow])
+### \#enableBackup(id, [backupWindow])
 
 | Parameter    | Type     | Description                                                             |
 | ------------ | -------- | ----------------------------------------------------------------------- |
+| id           | `number` | Server id.                                                              |
 | backupWindow | `string` | UTC time window: `22-02`, `02-06`, `06-10`, `10-14`, `14-18` or `18-22` |
 
 Returns: `Promise<Action>`
 
 Enables backups for this server.
 
-### \#disableBackup()
+### \#disableBackup(id)
+
+| Parameter | Type     | Description |
+| --------- | -------- | ----------- |
+| id        | `number` | Server id.  |
 
 Returns: `Promise<Action>`
 
 Disables backups for this server.
 
-### \#attachISO(iso)
+### \#attachISO(id, iso)
 
 | Parameter | Type                                          | Description                      |
 | --------- | --------------------------------------------- | -------------------------------- |
+| id        | `number`                                      | Server id.                       |
 | iso       | `number`, `string` or [`ISO`](../isos/iso.md) | ISO to be attached to the server |
 
 Returns: `Promise<Action>`
 
 Attaches an ISO.
 
-### \#detachISO()
+### \#detachISO(id)
+
+| Parameter | Type     | Description |
+| --------- | -------- | ----------- |
+| id        | `number` | Server id.  |
 
 Returns: `Promise<Action>`
 
 Detach any attached ISO.
 
-### \#changeProtection(data)
+### \#changeProtection(id, data)
 
 | Parameter | Type               | Description |
 | --------- | ------------------ | ----------- |
+| id        | `number`           | Server id.  |
 | data      | `Object`           | See below.  |
 
 Returns: `Promise<Action>`
@@ -203,7 +229,11 @@ Returns: `Promise<Action>`
 }
 ```
 
-### \#requestConsole()
+### \#requestConsole(id)
+
+| Parameter | Type     | Description |
+| --------- | -------- | ----------- |
+| id        | `number` | Server id.  |
 
 Returns: `Promise<Object>`
 
@@ -218,65 +248,3 @@ Requests access to the console via VNC.
   action: // An instance of Action
 }
 ```
-
-## Properties
-
-### .id
-
-Type: `number`
-
-### .name
-
-Type: `string`
-
-### .status
-
-Type: `string`
-
-Will be either `running`, `initializing`, `starting`, `stopping`, `off`, `deleting`, `migrating`, `rebuilding` or `unknown`.
-
-### .created
-
-Type: `Date`
-
-### .publicNet
-
-Type: [`PublicNetwork`](../misc/public-network.md)
-
-### .serverType
-
-Type: [`ServerType`](../servertypes/servertype.md)
-
-### .datacenter
-
-Type: [`Datacenter`](../datacenters/datacenter.md)
-
-### .image
-
-Type: [`Image`](../images/image.md) or `null`
-
-### .iso
-
-Type: [`ISO`](../isos/iso.md) or `null`
-
-### .rescueEnabled
-
-Type: `boolean`
-
-### .locked
-
-Type: `boolean`
-
-### .backupWindow
-
-Type: `string` or `null`
-
-### .traffic
-
-Type: [`Traffic`](../misc/traffic.md)
-
-### .rootPassword
-
-Type: `string` or `null`
-
-This variable is only set when creating a server.
