@@ -93,6 +93,22 @@ Returns: `Promise<Action>`
 
 Returns an [Action](../actions/action.md) for setting the pointer.
 
+### \#changeProtection(data)
+
+| Parameter | Type               | Description |
+| --------- | ------------------ | ----------- |
+| data      | `Object`           | See below.  |
+
+Returns: `Promise<Action>`
+
+#### Data object
+
+```javascript
+{
+    "delete": // If true, prevents the floating IP from being deleted
+}
+```
+
 ## Properties
 
 ### .id
