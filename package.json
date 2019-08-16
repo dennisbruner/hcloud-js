@@ -25,15 +25,19 @@
   "main": "lib/index.js",
   "scripts": {
     "lint": "standard --env mocha",
-    "test": "standard --env mocha && mocha --timeout 5000"
+    "test": "standard --env mocha && mocha --timeout 5000",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "axios": "^0.17.1",
-    "snake-case": "^2.1.0"
+    "snake-case": "^2.1.0",
+    "snyk": "^1.161.1"
   },
   "devDependencies": {
     "chai": "^4.1.2",
     "mocha": "^5.0.0",
     "standard": "^10.0.3"
-  }
+  },
+  "snyk": true
 }
