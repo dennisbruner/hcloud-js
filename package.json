@@ -11,7 +11,7 @@
   "license": "MIT",
   "author": {
     "name": "Dennis Bruner",
-    "email": "kontakt@dennisbruner.de",
+    "email": "dennis@bruner.email",
     "url": "https://dennisbruner.de"
   },
   "repository": {
@@ -20,7 +20,7 @@
   },
   "bugs": {
     "url": "https://github.com/dennisbruner/hcloud-js/issues",
-    "email": "kontakt@dennisbruner.de"
+    "email": "dennis@bruner.email"
   },
   "main": "lib/index.js",
   "scripts": {
@@ -30,7 +30,7 @@
     "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
-    "axios": "^0.17.1",
+    "axios": "^0.19.0",
     "snake-case": "^2.1.0",
     "snyk": "^1.161.1"
   },
