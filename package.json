@@ -27,12 +27,12 @@
     "lint": "standard --env mocha",
     "test": "standard --env mocha && mocha --timeout 5000",
     "snyk-protect": "snyk protect",
-    "prepublish": "npm run snyk-protect"
+    "prepublish": "yarn run snyk-protect"
   },
   "dependencies": {
     "axios": "^0.19.0",
     "snake-case": "^2.1.0",
-    "snyk": "^1.161.1"
+    "snyk": "^1.258.2"
   },
   "devDependencies": {
     "chai": "^4.1.2",
