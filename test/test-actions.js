@@ -1,3 +1,4 @@
+require('dotenv').config()
 const expect = require('chai').expect
 const HetznerCloud = require('../lib')
 const client = new HetznerCloud.Client(process.env.API_TOKEN)
