@@ -59,7 +59,7 @@ describe('LocationsEndpoint', function () {
     let location = null
 
     before(function () {
-      let locationID = locationsList.locations[0].id
+      const locationID = locationsList.locations[0].id
       return client.locations.get(locationID)
         .then(response => {
           location = response

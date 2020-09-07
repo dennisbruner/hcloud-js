@@ -59,7 +59,7 @@ describe('ActionsEndpoint', function () {
     let action = null
 
     before(function () {
-      let actionID = actionList.actions[0].id
+      const actionID = actionList.actions[0].id
       return client.actions.get(actionID)
         .then(response => {
           action = response

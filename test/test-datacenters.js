@@ -59,7 +59,7 @@ describe('DatacentersEndpoint', function () {
     let datacenter = null
 
     before(function () {
-      let datacenterID = datacentersList.datacenters[0].id
+      const datacenterID = datacentersList.datacenters[0].id
       return client.datacenters.get(datacenterID)
         .then(response => {
           datacenter = response

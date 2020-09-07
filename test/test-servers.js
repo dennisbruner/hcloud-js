@@ -8,7 +8,7 @@ describe('ServersEndpoint', function () {
   let network = null
 
   before(async function () {
-    network = await client.networks.create('test-network', '10.0.0.0/16', [{type: 'cloud', ip_range: '10.0.0.0/16', network_zone: 'eu-central'}])
+    network = await client.networks.create('test-network', '10.0.0.0/16', [{ type: 'cloud', ip_range: '10.0.0.0/16', network_zone: 'eu-central' }])
   })
 
   after(async function () {
