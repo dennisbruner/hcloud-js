@@ -20,20 +20,12 @@ let client = new HetznerCloud.Client('API_TOKEN')
 ### Build and create a server
 
 ```javascript
-client.servers.build('my-awesome-server')
+const { server } = await client.servers.build('my-awesome-server')
   .serverType('cx11')
   .location('nbg1')
   .image('debian-9')
   .sshKey('work')
   .create()
-  .then(function (response) {
-    // The response object contains:
-    // response.server - The server class instance
-    // response.action - The action for creating this server
-  })
-  .catch(function (error) {
-    // Handle error...
-  })
 ```
 
 ## Documentation
