@@ -41,6 +41,16 @@ client.servers.build('my-awesome-server')
  - [hcloud-js documentation page](https://hcloud-js.readthedocs.org/)
  - [Official Hetzner Cloud API documentation](https://docs.hetzner.cloud/)
 
+## Development
+
+### Quick setup
+
+* Clone this repo with `git clone https://github.com/dennisbruner/hcloud-js.git`
+* `cd hcloud-js`
+* Run `npm install` to install dependencies
+* Copy `.env.dist` to `.env` file and setup your access token. [You can use this guide by Hetzner.](https://docs.hetzner.cloud/#getting-started)
+
+
 ## License
 
 [MIT](LICENSE.md)
