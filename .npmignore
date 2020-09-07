@@ -1,5 +1,7 @@
 node_modules/
 docs/
 test/
-.travis.yml
 .env
+.env.dist
+.gitignore
+mkdocs.yml
