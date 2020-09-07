@@ -2,3 +2,4 @@ node_modules/
 docs/
 test/
 .travis.yml
+.env
