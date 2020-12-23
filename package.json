@@ -28,7 +28,7 @@
     "test": "npm run lint && mocha --timeout 5000"
   },
   "dependencies": {
-    "axios": "^0.20.0",
+    "axios": "^0.21.1",
     "snake-case": "^3.0.3"
   },
   "devDependencies": {
