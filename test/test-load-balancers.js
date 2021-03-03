@@ -5,12 +5,15 @@ const client = new HetznerCloud.Client(process.env.API_TOKEN)
 
 describe('LoadBalancerEndpoint', function () {
   let loadBalancer = null
+
   describe('#list()', function () {
     let loadBalancers = null
+
     it('should be instance of LoadBalancerList', async function () {
       loadBalancers = await client.loadBalancers.list()
       expect(loadBalancers).to.be.instanceOf(HetznerCloud.LoadBalancerList)
     })
+
     it('should return an empty array', function () {
       expect(loadBalancers.load_balancers).to.have.lengthOf(0)
     })
@@ -28,7 +31,7 @@ describe('LoadBalancerEndpoint', function () {
         undefined,
         undefined,
         false,
-        103077,
+        undefined,
         undefined,
         'hel1'
       )
