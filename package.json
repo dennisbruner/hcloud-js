@@ -28,13 +28,14 @@
     "test": "npm run lint && mocha --timeout 5000"
   },
   "dependencies": {
-    "axios": "^0.21.1",
+    "axios": "^0.27.2",
+    "js-yaml": "^4.1.0",
     "snake-case": "^3.0.4"
   },
   "devDependencies": {
-    "chai": "^4.3.3",
-    "dotenv": "^8.2.0",
-    "mocha": "^8.3.0",
-    "standard": "^16.0.3"
+    "chai": "^4.3.6",
+    "dotenv": "^16.0.1",
+    "mocha": "^10.0.0",
+    "standard": "^17.0.0"
   }
 }
